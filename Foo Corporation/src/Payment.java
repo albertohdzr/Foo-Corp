@@ -18,28 +18,31 @@ public class Payment {
 			hours = user_input.nextDouble();
 		
 		if (basePay<8.0) { 
-			hours = 61;
-			System.out.println("error");
+			hours = -1;
+			System.out.println("Incrementar Salario");
 		}
 		else {
 			
 		}
-			
+	if (hours<0){
+		System.out.println("Salario debe ser igual o mayor a 8 dolares");
+	}
+	else {
 		if (hours<=40.0) {
 			payment = hours*basePay;
-			System.out.println("La paga del trabajador por las" + hours + "horas trabajadas es de $" + payment + "dolares" );
+			System.out.println("La paga del trabajador por las-" + hours + "-horas trabajadas es de $" + payment + "dolares" );
 		}
 		else {
 			if (hours<=60.0) {
 				
 				payment = (maxHours*basePay) + ((hours-40)*(basePay*1.5));
-				System.out.println("La paga del trabajador por las" + hours + "horas trabajadas es de $" + payment + "dolares" );
+				System.out.println("La paga del trabajador por las" + hours + "-horas trabajadas es de $" + payment + "dolares" );
 			}
 			else {
-				System.out.println("error");
+				System.out.println("Demasiadas Horas");
 			}
 		}
-			
+	}
 			
 		
 		
