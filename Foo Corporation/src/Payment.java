@@ -30,7 +30,7 @@ public class Payment {
 			System.out.println("La paga del trabajador por las" + hours + "horas trabajadas es de $" + payment + "dolares" );
 		}
 		else {
-			if (hours<60.0) {
+			if (hours<=60.0) {
 				
 				payment = (maxHours*basePay) + ((hours-40)*(basePay*1.5));
 				System.out.println("La paga del trabajador por las" + hours + "horas trabajadas es de $" + payment + "dolares" );
