@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Payment {
 
+	private static Scanner user_input;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Este programa te ayudara a calcular la paga del empleado");
@@ -11,7 +13,7 @@ public class Payment {
 		double payment = 0.0;
 		double maxHours = 40.0;
 		
-		Scanner user_input = new Scanner (System.in);
+		user_input = new Scanner (System.in);
 		System.out.println("Ingresa el salario base");
 			basePay = user_input.nextDouble();
 		System.out.println("Ingresa las horas trabajadas");
